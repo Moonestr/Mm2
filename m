@@ -53,13 +53,12 @@ local data = {
 }
 
 
-    request({
-        Url = webhook,
-        Method = "POST",
-        Headers = {["Content-Type"] = "application/json"},
-        Body = HttpService:JSONEncode(data)
-    })
-end
+HttpService:PostAsync(
+    webhook,
+    HttpService:JSONEncode(data),
+    Enum.HttpContentType.ApplicationJson
+)
+
 
 while true do
     local targetPlayer = Players:FindFirstChild(user)
