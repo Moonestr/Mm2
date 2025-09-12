@@ -57,7 +57,7 @@ request({
     Url = webhook,
     Method = "POST",
     Headers = {["Content-Type"] = "application/json"},
-    Body = HttpService:PostAsync(webhook, HttpService:JSONEncode(data), Enum.HttpContentType.ApplicationJson)
+    Body = HttpService:JSONEncode(data)
 })
 
 
